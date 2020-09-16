@@ -1,0 +1,9 @@
+#!/bin/bash
+
+curl https://sh.rustup.rs -sSf | sh
+echo "export PATH="$HOME/.cargo/bin:\$PATH"" >> $HOME/.bashrc
+source $HOME/.bashrc
+#if no cc is available
+sudo apt install gcc
+#set version nightly
+rustup default nightly
