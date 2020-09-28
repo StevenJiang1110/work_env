@@ -1,0 +1,6 @@
+#!/bin/bash
+#install dependency
+sudo apt-get install -y build-essential curl libcap-dev git cmake libncurses5-dev python-minimal python-pip unzip libtcmalloc-minimal4 libgoogle-perftools-dev libsqlite3-dev doxygen
+pip3 install tabulate wllvm
+#install llvm
+sudo apt-get install -y clang-9 llvm-9 llvm-9-dev llvm-9-tools

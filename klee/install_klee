@@ -1,0 +1,7 @@
+#!/bin/bash
+cd klee
+mkdir build
+cp ../klee_cmake_cmd build/
+cd build
+./klee_cmake_cmd
+make -j20

@@ -1,0 +1,15 @@
+#!/bin/bash
+#dependency
+sudo apt-get install cmake bison flex libboost-all-dev python perl zlib1g-dev minisat -y
+#install stp
+git clone https://github.com/stp/stp.git
+cd stp
+git checkout tags/2.3.3
+mkdir build
+cd build
+cmake ..
+make
+sudo make install
+de ../..
+#set ulimit
+ulimit -s unlimited

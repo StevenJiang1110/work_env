@@ -1,0 +1,15 @@
+#!/bin/bash
+#dependency
+./install_dependency
+#solvers
+./build_stp
+./build_z3
+#optional
+./build_uclibc
+./get_google_test_sources
+sudo pip install lit
+sudo pip3 install lit
+./build_libCXX
+#install klee
+./install_klee
+echo "export PATH="/home/jjf/work_env/klee/klee/build/bin:\$PATH"" >> $HOME/.bashrc

@@ -1,0 +1,8 @@
+#!/bin/bash
+git clone https://github.com/klee/klee.git
+sudo mkdir /usr/local/jjf
+sudo chown jjf /usr/local/jjf
+cd klee
+LLVM_VERSION=9 SANITIZER_BUILD= BASE=/usr/local/jjf REQUIRES_RTTI=1 DISABLE_ASSERTIONS=1 ENABLE_DEBUG=0 ENABLE_OPTIMIZED=1 ./scripts/build/build.sh libcxx
+cd ..
+
