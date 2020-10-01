@@ -14,7 +14,7 @@ The image can be built as follows:(On my desktop, docker need `sudo` privilege) 
 ### build rust_verification 
 after build ubuntu:expect, `./build` will automatically build this container
 ### run rust_verification 
-`./run` will start the container
+`./run` will start the container  
 in container,execute: 
 + `cd $HOME/rust-verification-tools/try_klee` 
 + `./cargo_build` (build the crate) 
