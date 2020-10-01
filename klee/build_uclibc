@@ -1,6 +1,6 @@
 #!/bin/bash
 git clone https://github.com/klee/klee-uclibc.git
 cd klee-uclibc
-./configure --make-llvm-lib --with-llvm-config /usr/bin/llvm-config-9
+./configure --make-llvm-lib
 make -j20
 cd ..

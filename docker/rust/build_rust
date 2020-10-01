@@ -1,0 +1,3 @@
+#!/bin/bash
+VERSION="v3.0"
+sudo docker image build -t rust_dev_stage:${VERSION} -f Dockerfile .

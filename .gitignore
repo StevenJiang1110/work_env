@@ -3,3 +3,5 @@ klee/klee
 klee/klee-uclibc
 klee/stp
 klee/z3
+klee/build_uclibc_backup
+rust-verification-tools
