@@ -5,3 +5,4 @@ klee/stp
 klee/z3
 klee/build_uclibc_backup
 rust-verification-tools
+rust-compiler

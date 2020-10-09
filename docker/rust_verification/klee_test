@@ -1,1 +1,2 @@
-klee --output-dir=kleeout --warnings-only-to-file target/debug/deps/try_klee*.bc
+ktest-tool kleeout/test000001.ktest
+KTEST_FILE=kleeout/test000001.ktest cargo run --features=verifier-klee
