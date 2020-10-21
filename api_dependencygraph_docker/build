@@ -1,0 +1,3 @@
+#!/bin/bash
+
+docker image build -t api_dependency_graph:latest -f ./Dockerfile .

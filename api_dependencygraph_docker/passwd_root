@@ -1,0 +1,7 @@
+#!/usr/bin/expect
+spawn passwd root
+expect "Enter new UNIX password:"
+send "1234\n"
+expect "Retype new UNIX password:" 
+send "1234\n"
+expect off

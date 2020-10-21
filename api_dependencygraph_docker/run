@@ -1,0 +1,2 @@
+#!/bin/bash
+docker run -it -p 5222:22  api_dependency_graph:latest
